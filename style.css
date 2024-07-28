@@ -78,6 +78,7 @@ form button{
     width: 80%;
     margin: 100px auto 50px;
     display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
 }
@@ -86,4 +87,17 @@ form button{
     height: 230px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    #search-result {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #search-result {
+        grid-template-columns: 1fr;
+    }
 }
